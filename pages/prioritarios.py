@@ -57,6 +57,8 @@ for projeto in projetos_lista:
                     proposicao['situacaoTramitacao'] = "Sem tramitações registradas"
                     proposicao['dataUltimaTramitacao'] = "Sem data registrada"
                 
+                # Adicionar link para página da proposição na Câmara dos Deputados
+                proposicao['link'] = f"https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao={id_proposicao}"
                 projetos.append(proposicao)
             else:
                 st.write(f"Erro ao obter tramitações para proposição {id_proposicao}: {response_tramitacoes.status_code}")
@@ -67,8 +69,8 @@ for projeto in projetos_lista:
 
 # Exibir resultados em um DataFrame se projetos foram encontrados
 if projetos:
-    colunas = ['siglaTipo', 'numero', 'ano', 'ementa', 'situacaoTramitacao', 'dataUltimaTramitacao', 'uri']
+    colunas = ['siglaTipo', 'numero', 'ano', 'ementa', 'situacaoTramitacao', 'dataUltimaTramitacao', 'link']
     df = pd.DataFrame(projetos, columns=colunas)
     # Configurar a coluna de link como clique em Streamlit
-    df['uri'] = df['uri'].apply(lambda x: f"[Link]({x})")
+    df['link'] = df['link'].apply(lambda x: f"[Link para o projeto]({x})")
     st.dataframe(df)
