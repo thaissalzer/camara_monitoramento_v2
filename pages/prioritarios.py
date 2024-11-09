@@ -22,7 +22,7 @@ projetos_lista = [
     {"numero": 987, "ano": 2022},
     {"numero": 327, "ano": 2021},
     {"numero": 11247, "ano": 2018},
-    {"numero": "624-A", "ano": 2023},
+    {"numero": 624, "ano": 2023},
     {"numero": 6211, "ano": 2019},
     {"numero": 868, "ano": 2020},
     {"numero": 2780, "ano": 2024},
