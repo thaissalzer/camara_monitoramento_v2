@@ -2,8 +2,13 @@ import requests
 import pandas as pd
 import streamlit as st
 
-st.set_page_config(layout='wide')
-st.title('Monitoramento de Proposições Legislativas da Câmara dos Deputados')
+st.set_page_config(layout = 'wide')
+#inserindo o titulo
+st.title('Monitoramento das Proposições Legislativas PRIORITÁRIAS da Câmara dos Deputados')
+
+st.text("Os projetos prioritários são: PL 987/2022, PL 327/2021, PL 11247/2018, PL 624-A/2023, PL 6211/2019")
+st.text("PL 868/2020, PL 2780/2024, PL 2159/2021, PL 669/2023, PL 4975/2023, PL 3149/2020, PL 3335/2024")
+
 
 # Lista dos projetos de lei para acompanhar, com número e ano
 projetos_lista = [
