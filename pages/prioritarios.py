@@ -72,5 +72,5 @@ if projetos:
     colunas = ['siglaTipo', 'numero', 'ano', 'ementa', 'situacaoTramitacao', 'dataUltimaTramitacao', 'link']
     df = pd.DataFrame(projetos, columns=colunas)
     # Configurar a coluna de link como clique em Streamlit
-    df['link'] = df['link'].apply(lambda x: f"[Link para o projeto]({x})")
+    df['link'] = df['link'].apply(lambda x: f"{x}")
     st.dataframe(df)
