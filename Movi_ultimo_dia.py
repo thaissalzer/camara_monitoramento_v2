@@ -12,8 +12,8 @@ st.title('Monitoramento das Proposições Legislativas da Câmara dos Deputados'
 st.text("São acompanhados os PLs, PLPs, PECs e Requerimentos")
 st.text("que apresentaram alguma tramitação no último dia")
 
-st.text("Os temas em monitoramento são: gás natural, petróleo, energia, CDE, minerais, mineração, transição energética, clima, \n
-ambient, biocombust, hidrogênio, etanol, fertilizante, carbono, biometano")
+st.text("Os temas em monitoramento são: gás natural, petróleo, energia, CDE, minerais, mineração, transição energética, clima,")
+st.text("ambient, biocombust, hidrogênio, etanol, fertilizante, carbono, biometano")
 
     
    # Definir a URL da API para o endpoint de projetos
